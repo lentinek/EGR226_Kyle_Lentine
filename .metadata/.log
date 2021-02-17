@@ -1,0 +1,1114 @@
+!SESSION 2021-02-03 18:05:53.319 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.egit.core 2 0 2021-02-03 18:06:14.633
+!MESSAGE Builtin LFS support not present/detected
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.eclipse.egit.core.Activator.registerBuiltinLFS(Activator.java:279)
+	at org.eclipse.egit.core.Activator.start(Activator.java:212)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:921)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:1034)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:336)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:470)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:609)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:177)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:931)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:60)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:174)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2378)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2373)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY com.ti.common.core 1 0 2021-02-03 18:06:16.390
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-02-03 18:06:16.398
+!MESSAGE debugServerDir=C:/ti/ccs930/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.equinox.event 4 0 2021-02-03 18:06:23.103
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/ADD] {ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@6dfebd2a (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@3b17759c, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@6dfebd2a (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@3b17759c, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized}, AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@7a41f4a7
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalArgumentException: 
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:304)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.setIntroStandby(WorkbenchIntroManager.java:200)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:138)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:190)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:572)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1005)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:137)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:93)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:74)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1507)
+	at org.eclipse.ui.internal.Workbench.getActiveWorkbenchWindow(Workbench.java:1478)
+	at com.ti.ccstudio.debug.ui.targetStatus.TargetStatusManager.addStatusBar(TargetStatusManager.java:379)
+	at com.ti.ccstudio.debug.ui.targetStatus.statusBar.TargetStatusBar.fill(TargetStatusBar.java:44)
+	at com.ti.ccstudio.debug.ui.targetStatus.statusBar.CCSStatusBar.createControl(CCSStatusBar.java:39)
+	at org.eclipse.ui.menus.WorkbenchWindowControlContribution.delegateCreateControl(WorkbenchWindowControlContribution.java:105)
+	at org.eclipse.ui.internal.menus.CompatibilityWorkbenchWindowControlContribution.construct(CompatibilityWorkbenchWindowControlContribution.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1005)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:137)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:412)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:345)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:214)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:51)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlContribution.createControl(ToolControlContribution.java:53)
+	at org.eclipse.jface.action.ControlContribution.fill(ControlContribution.java:101)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:343)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.subscribeTopicUpdateToBeRendered(ToolBarManagerRenderer.java:213)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:346)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarContributionRecord.updateVisibility(ToolBarContributionRecord.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer$2.changed(ToolBarManagerRenderer.java:479)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:114)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.runAndTrack(EclipseContext.java:344)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.processAddition(ToolBarManagerRenderer.java:471)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.generateContributions(ToolBarManagerRenderer.java:447)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.processContribution(ToolBarManagerRenderer.java:416)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.createWidget(ToolBarManagerRenderer.java:376)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1012)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:778)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:749)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:743)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:727)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeChildrenHandler(PartRenderingEngine.java:308)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:88)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+	at org.eclipse.e4.ui.internal.workbench.ContributionsAnalyzer.processAddition(ContributionsAnalyzer.java:441)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.addTrimContributions(TrimBarRenderer.java:164)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:136)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:686)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:557)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:541)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:722)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:686)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:778)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:749)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:743)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:727)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1096)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+Caused by: java.lang.IllegalArgumentException: 
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:47)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElementsRecursive(ModelServiceImpl.java:160)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:411)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:397)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.getActivePerspective(ModelServiceImpl.java:976)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.getElementsToMinimize(MinMaxAddon.java:719)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.maximize(MinMaxAddon.java:690)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:381)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 150 more
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-03 18:06:23.823
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-03 18:06:23.831
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-03 18:06:23.837
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-02-03 18:06:39.254
+!MESSAGE CCS IDE session started!
+	CCS build: 9.3.0.00012
+	CCS location: C:/ti/ccs930/ccs
+	Workspace location: W:/EGR226_Kyle_Lentine
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.489
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.491
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.493
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.495
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.497
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.517
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.542
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.565
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.586
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 18:06:39.666
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-02-03 18:06:39.737
+!MESSAGE CCS HTTP adapter started! [ccs.port:53143] - Open 'http://localhost:53143/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 18:22:21.857
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 18:39:22.649
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 18:43:55.254
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 18:54:05.125
+!MESSAGE REX Ping (no_proxy): http://dev.ti.com/tirex4-desktop / resposeCode: 200
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 18:54:05.127
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 18:54:05.129
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 18:54:15.290
+!MESSAGE REX Ping (no_proxy): http://dev.ti.com/tirex4-desktop / resposeCode: 200
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 18:54:15.294
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 18:54:15.296
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+!SESSION 2021-02-03 19:01:31.430 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product -data file:/W:/EGR226_Kyle_Lentine/ -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-02-03 19:01:32.694
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-02-03 19:01:32.694
+!MESSAGE debugServerDir=C:/ti/ccs930/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.094
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.094
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.110
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.110
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.110
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.110
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.110
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.110
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.125
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:01:36.141
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 19:01:37.720
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-02-03 19:01:38.093
+!MESSAGE CCS HTTP adapter started! [ccs.port:53768] - Open 'http://localhost:53768/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-03 19:01:38.203
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-03 19:01:38.223
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-03 19:01:38.231
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-02-03 19:01:41.198
+!MESSAGE CCS IDE session started!
+	CCS build: 9.3.0.00012
+	CCS location: C:/ti/ccs930/ccs
+	Workspace location: W:/EGR226_Kyle_Lentine
+!SESSION 2021-02-03 19:02:31.181 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-02-03 19:02:35.112
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-02-03 19:02:35.112
+!MESSAGE debugServerDir=C:/ti/ccs930/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.293
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.293
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.293
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.308
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.308
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.308
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.308
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.308
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.308
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2021-02-03 19:02:38.324
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 19:02:39.827
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-02-03 19:02:40.192
+!MESSAGE CCS HTTP adapter started! [ccs.port:53858] - Open 'http://localhost:53858/ide' in web browser to see listing of available APIs...
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-03 19:02:40.224
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-03 19:02:40.231
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-02-03 19:02:40.235
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-02-03 19:02:43.415
+!MESSAGE CCS IDE session started!
+	CCS build: 9.3.0.00012
+	CCS location: C:/ti/ccs930/ccs
+	Workspace location: W:/EGR226_Kyle_Lentine
+
+!ENTRY com.ti.ccstudio.debug.server 4 214294189 2021-02-03 19:02:43.524
+!MESSAGE Unexpected CCS exit detected [2/3/21 7:01 PM]!!!
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 19:11:39.013
+!MESSAGE REX Ping (no_proxy): http://dev.ti.com/tirex4-desktop / resposeCode: 200
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 19:11:39.013
+!MESSAGE REX Launching REX 4.1 (online)
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-02-03 19:11:39.378
+!MESSAGE REX Setting browser URL to: http://dev.ti.com/tirex4-desktop
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-02-03 19:15:33.616
+!MESSAGE Indexed 'LAB3_Part2' (3 sources, 10 headers) in 1.32 sec: 1,142 declarations; 2,355 references; 0 unresolved inclusions; 0 syntax errors; 6 unresolved names (0.17%)
+
+!ENTRY org.eclipse.ui 2 2 2021-02-03 19:23:54.264
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:23:57.928
+!MESSAGE DS_ERROR: Warning:
+A firmware update is required for the debug probe. Click the "Update" button to update the firmware and connect to the debug target.
+DO NOT UNPLUG THE DEBUG PROBE DURING THE UPDATE.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-02-03 19:37:35.092
+!MESSAGE Indexed 'LAB03_Part3' (3 sources, 10 headers) in 0.414 sec: 1,142 declarations; 2,355 references; 0 unresolved inclusions; 0 syntax errors; 6 unresolved names (0.17%)
+
+!ENTRY org.eclipse.core.resources 4 1 2021-02-03 19:39:06.506
+!MESSAGE Problems occurred while refreshing local changes
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2021-02-03 19:39:06.506
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:976)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:956)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1547)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+Contains: The project description file (.project) for 'LAB03_Part3' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+java.lang.Exception: The project description file (.project) for 'LAB03_Part3' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:39)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:35)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:903)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1341)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:379)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:288)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:110)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:973)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:956)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1547)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2021-02-03 19:39:06.511
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2021-02-03 19:39:06.511
+!MESSAGE The project description file (.project) for 'LAB03_Part3' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'LAB03_Part3' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:39)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:35)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:903)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1341)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:379)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:288)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:110)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:973)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:956)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1547)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.ti.ccstudio.project.core 4 0 2021-02-03 19:39:06.515
+!MESSAGE An internal error was logged by 'com.ti.ccstudio.project.core'.
+!STACK 0
+java.io.FileNotFoundException: W:\EGR226_Kyle_Lentine\LAB03_Part3\.ccsproject (Access is denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileWriter.<init>(Unknown Source)
+	at com.ti.ccstudio.project.core.internal.settings.CCSProjectSettings.saveSettings(CCSProjectSettings.java:723)
+	at com.ti.ccstudio.project.core.internal.settings.CCSProjectSettings.set(CCSProjectSettings.java:650)
+	at com.ti.ccstudio.project.core.internal.settings.CCSProjectSettings.setIsTargetConfigurationManual(CCSProjectSettings.java:384)
+	at com.ti.ccstudio.debug.launch.TargetConfigTracker$1.activeConfigFileChanged(TargetConfigTracker.java:51)
+	at com.ti.ccstudio.system.setup.internal.TargetConfigurationManager.setActiveTargetConfigurationProperty(TargetConfigurationManager.java:308)
+	at com.ti.ccstudio.system.setup.ui.TargetConfigurationDecorator.setActiveConfiguration(TargetConfigurationDecorator.java:246)
+	at com.ti.ccstudio.system.setup.ui.TargetConfigurationDecorator.setNextAvaliableConfiguration(TargetConfigurationDecorator.java:279)
+	at com.ti.ccstudio.system.setup.ui.TargetConfigurationDecorator.resourceRemoved(TargetConfigurationDecorator.java:341)
+	at com.ti.ccstudio.system.setup.ui.SystemSetupResourceMonitor.notifyRemoved(SystemSetupResourceMonitor.java:166)
+	at com.ti.ccstudio.system.setup.ui.SystemSetupResourceMonitor$1$1.run(SystemSetupResourceMonitor.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.resources 4 368 2021-02-03 19:40:04.158
+!MESSAGE Resource '/LAB03_Part3' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/LAB03_Part3' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:39)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:35)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:327)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:201)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:142)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:207)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1168)
+	at com.ti.ccstudio.project.core.internal.build.ACommandLineGenerator.getMaxCommandLengthProperty(ACommandLineGenerator.java:273)
+	at com.ti.ccstudio.project.ui.views.internal.console.ConsoleViewDecorator$1.textChanged(ConsoleViewDecorator.java:102)
+	at org.eclipse.jface.text.TextViewer.updateTextListeners(TextViewer.java:2699)
+	at org.eclipse.jface.text.TextViewer.invalidateTextPresentation(TextViewer.java:3320)
+	at org.eclipse.jface.text.TextViewer.initializeWidgetContents(TextViewer.java:3368)
+	at org.eclipse.jface.text.TextViewer.setVisibleDocument(TextViewer.java:3407)
+	at org.eclipse.jface.text.TextViewer.setDocument(TextViewer.java:2795)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleViewer.setDocument(BuildConsoleViewer.java:148)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.setDocument(BuildConsolePage.java:171)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage$2.run(BuildConsolePage.java:203)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3906)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3537)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:321)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:636)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:145)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:282)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:447)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:466)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:81)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:189)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:71)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:209)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:123)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:41)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:161)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:445)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:96)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:48)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:449)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:167)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.core.resources 4 368 2021-02-03 19:40:04.158
+!MESSAGE Resource '/LAB03_Part3' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/LAB03_Part3' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:39)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:35)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:327)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:201)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:142)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:207)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1168)
+	at com.ti.ccstudio.project.core.internal.build.ACommandLineGenerator.getMaxCommandLengthProperty(ACommandLineGenerator.java:273)
+	at com.ti.ccstudio.project.ui.views.internal.console.ConsoleViewDecorator$1.textChanged(ConsoleViewDecorator.java:102)
+	at org.eclipse.jface.text.TextViewer.updateTextListeners(TextViewer.java:2699)
+	at org.eclipse.jface.text.TextViewer.invalidateTextPresentation(TextViewer.java:3320)
+	at org.eclipse.jface.text.TextViewer.initializeWidgetContents(TextViewer.java:3368)
+	at org.eclipse.jface.text.TextViewer.setVisibleDocument(TextViewer.java:3407)
+	at org.eclipse.jface.text.TextViewer.setDocument(TextViewer.java:2795)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleViewer.setDocument(BuildConsoleViewer.java:148)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.setDocument(BuildConsolePage.java:171)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage$2.run(BuildConsolePage.java:203)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3906)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3537)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:321)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:636)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:145)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:282)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:447)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:466)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:81)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:189)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:71)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:209)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:123)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:41)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:161)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:445)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:96)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:48)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:449)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:167)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-02-03 19:40:27.648
+!MESSAGE Indexed 'LAB03_Part3' (3 sources, 10 headers) in 0.486 sec: 1,142 declarations; 2,355 references; 0 unresolved inclusions; 0 syntax errors; 6 unresolved names (0.17%)
+
+!ENTRY org.eclipse.core.resources 4 368 2021-02-03 19:40:31.948
+!MESSAGE Resource '/LAB03_Part3' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/LAB03_Part3' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:39)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:35)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:327)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:201)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:142)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:207)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1168)
+	at com.ti.ccstudio.project.core.internal.build.ACommandLineGenerator.getMaxCommandLengthProperty(ACommandLineGenerator.java:273)
+	at com.ti.ccstudio.project.ui.views.internal.console.ConsoleViewDecorator$1.textChanged(ConsoleViewDecorator.java:102)
+	at org.eclipse.jface.text.TextViewer.updateTextListeners(TextViewer.java:2699)
+	at org.eclipse.jface.text.TextViewer.invalidateTextPresentation(TextViewer.java:3320)
+	at org.eclipse.jface.text.TextViewer.initializeWidgetContents(TextViewer.java:3368)
+	at org.eclipse.jface.text.TextViewer.setVisibleDocument(TextViewer.java:3407)
+	at org.eclipse.jface.text.TextViewer.setDocument(TextViewer.java:2795)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleViewer.setDocument(BuildConsoleViewer.java:148)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.setDocument(BuildConsolePage.java:171)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage$2.run(BuildConsolePage.java:203)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3906)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3537)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:321)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:636)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:145)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:282)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:447)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:466)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:81)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:189)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:71)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:209)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:123)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:41)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:161)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:445)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:96)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:48)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:449)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:167)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.core.resources 4 368 2021-02-03 19:40:31.948
+!MESSAGE Resource '/LAB03_Part3' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/LAB03_Part3' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:39)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:35)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:327)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:201)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:142)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:207)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1168)
+	at com.ti.ccstudio.project.core.internal.build.ACommandLineGenerator.getMaxCommandLengthProperty(ACommandLineGenerator.java:273)
+	at com.ti.ccstudio.project.ui.views.internal.console.ConsoleViewDecorator$1.textChanged(ConsoleViewDecorator.java:102)
+	at org.eclipse.jface.text.TextViewer.updateTextListeners(TextViewer.java:2699)
+	at org.eclipse.jface.text.TextViewer.invalidateTextPresentation(TextViewer.java:3320)
+	at org.eclipse.jface.text.TextViewer.initializeWidgetContents(TextViewer.java:3368)
+	at org.eclipse.jface.text.TextViewer.setVisibleDocument(TextViewer.java:3407)
+	at org.eclipse.jface.text.TextViewer.setDocument(TextViewer.java:2795)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleViewer.setDocument(BuildConsoleViewer.java:148)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.setDocument(BuildConsolePage.java:171)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage$2.run(BuildConsolePage.java:203)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3906)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3537)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:321)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:636)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:145)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:282)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:447)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:466)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:81)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:189)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:71)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:209)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:123)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:41)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:161)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:445)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:96)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:48)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:449)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:167)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-02-03 19:41:03.773
+!MESSAGE Indexed 'LAB03_Part3' (2 sources, 10 headers) in 0.358 sec: 1,140 declarations; 2,345 references; 0 unresolved inclusions; 0 syntax errors; 6 unresolved names (0.17%)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:47:40.459
+!MESSAGE DS_ERROR: CORTEX_M4_0: JTAG Communication Error: (Error -613 @ 0x0) The target indicates that it is busy.  Either try the SWD request  again, or abort the transaction. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:47:40.497
+!MESSAGE DS_ERROR: CORTEX_M4_0: Breakpoint Manager: Remove job failed: Register/memory write failure[22005]
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:48:29.122
+!MESSAGE DS_ERROR: CORTEX_M4_0: JTAG Communication Error: (Error -613 @ 0x0) The target indicates that it is busy.  Either try the SWD request  again, or abort the transaction. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:48:29.159
+!MESSAGE DS_ERROR: CORTEX_M4_0: Breakpoint Manager: Remove job failed: Register/memory write failure[22005]
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:48:59.547
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:48:59.696
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:49:13.449
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:49:13.607
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:49:23.394
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:49:23.521
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:49:42.414
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:49:42.543
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:49:44.839
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:49:44.858
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:50:03.682
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:50:03.815
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:50:37.578
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:50:37.718
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:51:07.997
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:51:08.164
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:51:16.993
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:51:17.146
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:52:22.389
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:52:22.549
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:52:44.716
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -614 @ 0x0) The target indicates there is an error condition from a previous SWD  request. Clear the error the condition, and try the SWD request again. (Emulation package 8.4.0.00006) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-02-03 19:52:44.867
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -614 @ 0x0)
+The target indicates there is an error condition from a previous SWD 
+request. Clear the error the condition, and try the SWD request again.
+(Emulation package 8.4.0.00006)
+

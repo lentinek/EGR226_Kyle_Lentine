@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1612366578 source:w:\egr226_kyle_lentine\lab02_part1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
